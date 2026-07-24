@@ -1,0 +1,34 @@
+{
+  "name": "genpark-agentic-filesystem-virtual-bridge-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Virtual shared filesystem for multi-agent state persistence and file manipulation.",
+  "author": "genpark",
+  "category": "operations",
+  "tags": [
+    "virtual-filesystem",
+    "agent-state",
+    "multi-agent-bridge",
+    "ph-july25"
+  ],
+  "inputs": {
+    "virtual_path": {
+      "type": "string"
+    },
+    "file_data": {
+      "type": "string"
+    },
+    "agent_id": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "file_sha": {
+      "type": "string"
+    },
+    "persisted": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
